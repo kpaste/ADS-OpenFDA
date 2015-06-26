@@ -9,9 +9,13 @@
     <meta name='description' content='openFDA'>
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
     <link rel='stylesheet' type='text/css' href='font/fa.css'>
+    <link rel='stylesheet' type='text/css' href='c3.css'>
     <link rel='stylesheet' type='text/css' href='style.css'>
     <link rel='icon' href='img/favicon.ico' type='image/x-icon'>
+    <script src='d3.min.js'></script>
+    <script src='c3.js'></script>
     <script src='jquery.js'></script>
+    <!--<script src='api-scripts.js'></script>-->
     <script src="//use.typekit.net/jjh7phy.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 </head>
@@ -20,8 +24,14 @@
 <script type='text/javascript'>$(document).ready(function(){ 
     $('.navicon').click(function(){$('.navid').slideToggle();}); 
     $('.navid ul li a').click(function(){$('.navid').slideUp();});
-    $('.chosen').css('color','#191919');
-    $('.chosen').css('font-family','medium ');
+    $('.chosen').css('color','white');
+    $('.chosen').css('font-weight','400');
+
+    if(window.innerWidth > 1000)
+    {
+        var h = window.innerHeight-40;
+        $('.left').css('height', h);
+    }
 });</script>
 <!-- END Universal JS -->
 <!-- START Nav HTML -->
