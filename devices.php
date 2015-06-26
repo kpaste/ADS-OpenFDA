@@ -16,5 +16,5 @@
 </div>
 
 <script type='text/javascript'>$(document).ready(function(){ 
-    $('.devices').css('border-bottom','1px solid #191919')
+    $('.devices').css('color','#191919')
 });</script></body></html>

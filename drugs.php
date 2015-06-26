@@ -55,5 +55,5 @@
 </div>
 
 <script type='text/javascript'>$(document).ready(function(){ 
-    $('.drugs').css('border-bottom','1px solid #191919');
+    $('.drugs').css('color','#191919')
 });</script></body></html>

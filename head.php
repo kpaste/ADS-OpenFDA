@@ -8,10 +8,12 @@
     <title>OpenFDA</title>
     <meta name='description' content='openFDA'>
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
-    <link rel='stylesheet' type='text/css' href='font/!!!.css'>
+    <link rel='stylesheet' type='text/css' href='font/fa.css'>
     <link rel='stylesheet' type='text/css' href='style.css'>
     <link rel='icon' href='img/favicon.ico' type='image/x-icon'>
     <script src='jquery.js'></script>
+    <script src="//use.typekit.net/jjh7phy.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <!-- END Head -->
 <!-- START Universal JS -->
@@ -25,18 +27,21 @@
 <!-- START Nav HTML -->
 <div class='navicon'><div class='n1'></div><div class='n2'></div><div class='n3'></div></div>
 <nav>
-    <a class='logo' href='index.php'></a>
     <ul>
-        <li><a class = 'drugs'href='drugs.php'>DRUGS</a></li>
-        <li><a class='devices' href='devices.php'>DEVICES</a></li>
-        <li><a class='foods' href='foods.php'>FOODS</a></li>
+        <li><a class='logo' href='index.php'><img src='img/openFDA.png'></a></li>
+        <li><a class = 'drugs'href='drugs.php'>Drugs</a></li>
+        <li><a class='devices' href='devices.php'>Devices</a></li>
+        <li><a class='foods' href='foods.php'>Foods</a></li>
+        <!--<li><a class='about' href='about.php'>About</a></li>-->
     </ul>
 </nav>
+<a class='logoRez' href='index.php'><img src='img/openFDA.png'></a>
 <div class='navid'>
+
     <ul>
-        <li><a class = 'drugs'href='drugs.php'>DRUGS</a></li>
-        <li><a class='devices' href='devices.php'>DEVICES</a></li>
-        <li><a class='foods' href='foods.php'>FOODS</a></li>
+        <li><a class='drugs'href='drugs.php'>Drugs</a></li>
+        <li><a class='devices' href='devices.php'>Devices</a></li>
+        <li><a class='foods' href='foods.php'>Foods</a></li>
     </ul>
     <i class='fa fa-navicon'></i>
 </div>

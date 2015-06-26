@@ -10,5 +10,5 @@
 </div>
 
 <script type='text/javascript'>$(document).ready(function(){ 
-    $('.foods').css('border-bottom','1px solid #191919')
+    $('.foods').css('color','#191919')
 });</script></body></html>
