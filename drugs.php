@@ -380,8 +380,8 @@ var chart = c3.generate({
 
     $(window).on("resize", function () {
         var windowsize = $(this).width();
-        //if (windowsize > 541 && i === 0) {
+        if (windowsize > 800 && i === 0) {
             location.reload();
-        //} 
+        } 
     });
 });</script></body></html>
