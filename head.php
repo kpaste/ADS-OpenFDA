@@ -14,6 +14,7 @@
     <link rel='icon' href='img/favicon.ico' type='image/x-icon'>
     <script src='d3.min.js'></script>
     <script src='c3.js'></script>
+    <script src='pretty.js'></script>
     <script src='jquery.js'></script>
     <!--<script src='api-scripts.js'></script>-->
     <script src="//use.typekit.net/jjh7phy.js"></script>
@@ -27,22 +28,16 @@
     $('.chosen').css('color','white');
     $('.chosen').css('font-weight','400');
 
-    if(window.innerWidth > 1000)
-    {
-        var h = window.innerHeight-40;
-        $('.left').css('height', h);
-    }
 });</script>
 <!-- END Universal JS -->
 <!-- START Nav HTML -->
 <div class='navicon'><div class='n1'></div><div class='n2'></div><div class='n3'></div></div>
 <nav>
     <ul>
-        <li><a class='logo' href='index.php'><img src='img/openFDA.png'></a></li>
-        <li><a class = 'drugs'href='drugs.php'>Drugs</a></li>
-        <li><a class='devices' href='devices.php'>Devices</a></li>
-        <li><a class='foods' href='foods.php'>Foods</a></li>
-        <!--<li><a class='about' href='about.php'>About</a></li>-->
+        <li><a class='logo' href='index.php'><img src='img/openFDA.png'></a></li><li class='drugs-li'>
+        <a class = 'drugs'href='drugs.php'>Drugs</a></li><li class='devices-li'>
+        <a class='devices' href='drugs.php'>Devices</a></li><li class='fodds-li'>
+        <a class='foods' href='drugs.php'>Foods</a></li>
     </ul>
 </nav>
 <a class='logoRez' href='index.php'><img src='img/openFDA.png'></a>
@@ -50,8 +45,8 @@
 
     <ul>
         <li><a class='drugs'href='drugs.php'>Drugs</a></li>
-        <li><a class='devices' href='devices.php'>Devices</a></li>
-        <li><a class='foods' href='foods.php'>Foods</a></li>
+        <li><a class='devices' href='drugs.php'>Devices</a></li>
+        <li><a class='foods' href='drugs.php'>Foods</a></li>
     </ul>
     <i class='fa fa-navicon'></i>
 </div>

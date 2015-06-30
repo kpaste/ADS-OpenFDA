@@ -1,7 +1,7 @@
 <?php include 'head.php' ?>
 <script type="text/javascript">$(document).ready(function(){ 
-    if(window.innerWidth > 1000){var place=10}
-    else{var place = 2}
+if(window.innerWidth > 1000){var place=10}
+else{var place = 2}
 
 var chart = c3.generate({
     padding:{right:10},
@@ -280,7 +280,7 @@ var chart = c3.generate({
             69453, 
             63214,
             59876,
-            77672,
+            107672,
             52103,
             64758,
             69874,
@@ -307,7 +307,6 @@ var chart = c3.generate({
                 return format(value);
             }
         }*/
-        //FIGURE OUT HOW TO FORMAT MONTH AND YEAR SEPARATE FROM TICK ABOVE WHICH IS SETTING YEAR UNIVERSALLY
     },
     point: {
         r:0
@@ -315,72 +314,118 @@ var chart = c3.generate({
 });
 
 });</script>
-<div class='left'>
-    <div class='title'>DRUGS</div>
-    <div class='left-nav adverse'>
-        <span>Adverse events - <a href=''>Reference</a></span>
-        <a class='chosen' href=''>Reports over time</a>
-        <a href=''>Who reports?</a>
-        <a href=''>Drugs Classes</a>
-        <a href=''>Drug indications</a>
-        <a href=''>Reported reactions</a>    
-    </div>
-    <div class='left-nav labeling'>
-        <span>Labeling - <a href=''>Reference</a></span>
-        <a href=''>Submissions over time</a>
-        <a href=''>Routes of administration</a>
-        <a href=''>Drug interactions</a>
-    </div>
-    <div class='left-nav enforcement'>
-        <span>Enforcement reports - <a href=''>Reference</a></span>
-        <a href=''>Enforcement reports over time</a>
-        <a href=''>Who initiates?</a>
-        <a href=''>Seriousness</a>
-    </div>
-</div>
-
-<div class='right'>
-    <div class='viz-title'>Adverse drugs event reports since 2004</div>
-    <div class='viz-content'>
-        This is the openFDA API endpoint for adverse drug events. An adverse event 
-        is submitted to the FDA to report any undesirable experience associated with 
-        the use of a drug, including serious drug side effects, product use errors, 
-        product quality problems, and therapeutic failures.<br><br>
-        Reporting of adverse events by healthcare professionals and consumers is 
-        voluntary in the United States. Increases in the total number of adverse 
-        events are likely caused by improved reporting. News, enforcement actions, 
-        and other phenomena can also spur reporting.<br><br>
-    </div>
-    
-    <div class='viz'>
-        <div id="chart"></div>
-    </div>
-    <input class='in-url' type='text' value='https://api.fda.gov/drug/event.json?search=receivedate:[20040101+TO+20150101]&count=receivedate'>
-    <input class='in-param in-one' type='text' value='receivedate:[20040101+TO+20150101]'>
-    <input class='in-param in-two' type='text' value='receivedate'>
-    <div class='vj-wrap'>
-        <a href='https://api.fda.gov/drug/event.json?search=receivedate:[20040101+TO+20150101]&count=receivedate' class='view-json' target='_blank'>
-            View JSON
-        </a>
+<div class='rapper'>
+    <div class='left'>
+        <div class='title'>DRUGS</div>
+        <div class='left-nav adverse'>
+            <span>Adverse events - <a href=''>Reference</a></span>
+            <a class='chosen' href=''>Reports over time</a>
+            <a href=''>Who reports?</a>
+            <a href=''>Drugs Classes</a>
+            <a href=''>Drug indications</a>
+            <a href=''>Reported reactions</a>    
+        </div>
+        <div class='left-nav labeling'>
+            <span>Labeling - <a href=''>Reference</a></span>
+            <a href=''>Submissions over time</a>
+            <a href=''>Routes of administration</a>
+            <a href=''>Drug interactions</a>
+        </div>
+        <div class='left-nav enforcement'>
+            <span>Enforcement reports - <a href=''>Reference</a></span>
+            <a href=''>Enforcement reports over time</a>
+            <a href=''>Who initiates?</a>
+            <a href=''>Seriousness</a>
+        </div>
     </div>
 
-    <div class='rq-wrap'>
-        <a class='run-query'>
-            Run Query
-        </a>
-    </div>
+    <div class='right'>
+        <div class='viz-title'>Adverse drugs event reports since 2004</div>
+        <div class='viz-content'>
+            This is the openFDA API endpoint for adverse drug events. An adverse event 
+            is submitted to the FDA to report any undesirable experience associated with 
+            the use of a drug, including serious drug side effects, product use errors, 
+            product quality problems, and therapeutic failures.<br><br>
+            Reporting of adverse events by healthcare professionals and consumers is 
+            voluntary in the United States. Increases in the total number of adverse 
+            events are likely caused by improved reporting. News, enforcement actions, 
+            and other phenomena can also spur reporting.<br><br>
+        </div>
+        
+        <div class='viz'><div id="chart"></div></div>
+        <div class='filter'>
+            <ul>
+                <li><input checked type='radio' name='fil' value='all-adverse'> All adverse events reports</li>
+                <li><input type='radio' name='fil' value='reported-through'> Reported through manufacturers</li>
+                <li><input type='radio' name='fil' value='reported-directly'> Reported directly by public</li>
+                <li><input type='radio' name='fil' value='where-indication'> Where use indication was hypertension</li>
+                <br>
+                <li>4,586,948 Records</li> 
+            </ul>
+        </div>
+        <input class='in-url' type='text' value='https://api.fda.gov/drug/event.json?search=receivedate:[20040101+TO+20150101]&count=receivedate'>
+        <!--<div class='param-tit'><span>search= </span>parameter</div>-->
+        <input class='in-param in-one' type='text' value='receivedate:[20040101+TO+20150101]'>
+        
+        <!--<div class='param-tit'></div>-->
+        <input class='in-param in-two' type='text' value='receivedate'>
+        <div class='vj-wrap'>
+            <a href='https://api.fda.gov/drug/event.json?search=receivedate:[20040101+TO+20150101]&count=receivedate' class='view-json' target='_blank'>
+                View JSON
+            </a>
+        </div>
 
+        <div class='rq-wrap'>
+            <a class='run-query'>
+                Run Query
+            </a>
+            <a class='close'>
+                Close
+            </a>
+        </div>
+<pre class="prettyprint">
+    <?php include 'drugRef.php' ?>
+</pre>
+        <!--<section>Construct A Query</section>
+            <span>Sample (Anatomy)</span>
+            <span>R</span>
+            <span></span>
+        <section>Results</section>
+            <span></span>
+            <span></span>
+            <span></span>
+        <section>Construct A Query</section>-->
+    </div>
 </div>
 
 <?php include 'foot.php' ?>
 
 <script type='text/javascript'>$(document).ready(function(){ 
-    $('.drugs').css('color','#191919');
+    $('.drugs').css('color','#005199');
+    $('.drugs-li').css('background','#eaeaea');
     $('body').css('background','white');
+
+    $('.run-query').click(function(){
+        $('.prettyprint').slideDown();
+        $('.run-query').hide();
+        $('.close').css('display','inline-block');
+    }); 
+
+    $('.close').click(function(){
+        $('.prettyprint').slideUp();
+        $('.run-query').css('display','inline-block');
+        $('.close').hide();
+    }); 
+
+    if(window.innerWidth > 1000)
+    {
+        var h = $('.right').height() + 10;
+        $('.left').css('height', h);
+    }
 
     $(window).on("resize", function () {
         var windowsize = $(this).width();
-        if (windowsize > 800 && i === 0) {
+        if (windowsize > 840) {
             location.reload();
         } 
     });
