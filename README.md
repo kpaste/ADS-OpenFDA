@@ -14,5 +14,6 @@ Our Front-End Web Developer created the first version of the prototype in day-lo
 The first checkpoint with the Product Manager and the users took place after the homepage and main navigation were first implemented. Feedback from the team resulted in several positive design changes to the homepage and navigation. A question arose as to the design of the Drugs subpage, so our Product Manager set up a usability test with a couple of users to test which design concept was best. The test told the team which way to go so that the next checkpoint included a revised subpage for Drugs with new visual design elements added to the homepage. In the final checkpoint, users gave their input for remaining pieces of the site, including subpages for Reference and About, and the remainder of the visual design was added. 
 
 We held a user-acceptance meeting with the users and the Product Manager to evaluate the delivery against the design goals.  
-As we have demonstrated here, our entire approach engaged users throughout the development process and this aligns to the DSP. 
+
+As we have demonstrated here, our entire approach engaged users throughout the development process and this aligns to the DSP. Evidence of our approach can be found in the file called "Evidence for PGPS Design Pool One" found in our GIT repository
  
