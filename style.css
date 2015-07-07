@@ -13,6 +13,16 @@ body,input,section,div,span,pre,a,ul,li{font-family: "petala-pro";
 	color:white;}
 body{margin-top:70px;
 	background:#002445;}
+h1,h2{color:#888888;
+	font-weight:100;}
+
+h2{font-size:1.1em;}
+
+.sep{width:100%;
+	height:1px;
+	margin-top:40px;
+	border-top:1px solid #f0f0f0;}
+
 a,
 a span,
 a i{color:#25aae1;}
@@ -192,25 +202,30 @@ nav ul li:last-child{border-right:none;}
 	color:#005199;
 	font-size:11px;}
 
-.in-param{width:49%;
+.in-param{width:100%%;
 	height:25px;
 	text-indent:10px;
 	font-size:14px;
 	display:inline-block;
-	margin-top:10px;
 	background:#888;
 	border:none;}
 
-/*.param-tit{width:49%;
-	height:25px;
-	text-indent:10px;
-	font-size:14px;
-	display:inline-block;
-	margin-top:10px;
-	background:#888;
-	border:none;}*/
-
 .in-two{float:right;}
+
+.left-sec,
+.right-sec{width:49%;
+	display:inline-block;
+	vertical-align:top;}
+
+.right-sec{float:right;}
+
+.param-tit{color:#888;
+	font-size:13px;
+	margin-top:10px;}
+
+
+.param-tit span{color:#25aae1;}
+
 
 .vj-wrap,
 .rq-wrap{width:49%;
@@ -252,9 +267,28 @@ nav ul li:last-child{border-right:none;}
 	padding-bottom:40px;
 	font-size:33px;}
 
+.logoRez{display:none;}
 /*END page details*/
 
-.logoRez{display:none;}
+.query-url{color:#888;
+	font-size:13px;
+	line-height:20px;}
+
+/*.param-tit{width:49%;
+	height:25px;
+	text-indent:10px;
+	font-size:14px;
+	display:inline-block;
+	margin-top:10px;
+	background:#888;
+	border:none;}*/
+
+
+
+
+
+
+
 
 /*START media queries*/
 @media screen and (max-width: 1260px) {
@@ -311,9 +345,20 @@ nav ul li:last-child{border-right:none;}
 
 	.viz-title{padding-right:40px;}
 	.in-url{width:90%;
-		font-size:8px;}
+		font-size:10px;}
 	.in-param{width:90%;}
+	
+	.in-one,
 	.in-two{float:left;}
+	
+	.left-sec,
+	.right-sec{width:47%;}
+
+
+	.in-one,
+	.in-two{font-size:10px;}
+
+	.right-sec{float:left;}
 }
 
 

@@ -36,8 +36,8 @@
     <ul>
         <li><a class='logo' href='index.php'><img src='img/openFDA.png'></a></li><li class='drugs-li'>
         <a class = 'drugs'href='drugs.php'>Drugs</a></li><li class='devices-li'>
-        <a class='devices' href='drugs.php'>Devices</a></li><li class='fodds-li'>
-        <a class='foods' href='drugs.php'>Foods</a></li>
+        <a class='devices' href='devices.php'>Devices</a></li><li class='foods-li'>
+        <a class='foods' href='foods.php'>Foods</a></li>
     </ul>
 </nav>
 <a class='logoRez' href='index.php'><img src='img/openFDA.png'></a>
@@ -45,8 +45,8 @@
 
     <ul>
         <li><a class='drugs'href='drugs.php'>Drugs</a></li>
-        <li><a class='devices' href='drugs.php'>Devices</a></li>
-        <li><a class='foods' href='drugs.php'>Foods</a></li>
+        <li><a class='devices' href='devices.php'>Devices</a></li>
+        <li><a class='foods' href='foods.php'>Foods</a></li>
     </ul>
     <i class='fa fa-navicon'></i>
 </div>
