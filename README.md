@@ -1,4 +1,6 @@
-We selected Mike Gertz to be Product Manager and guide the team, make key decisions, and hold the team accountable for a high quality prototype. Please see our evidence provided in the Git Repository, see file “Evidence for PGPS Design Pool One.pdf”, page 4.
+http://pastegroup.com/ads  
+
+We selected Mike Gertz to be Product Manager and guide the team, make key decisions, and hold the team accountable for a  quality prototype. Please see our evidence provided in the Git Repository, see file “Evidence for PGPS Design Pool One.pdf”, page 4.
 
 Mike assembled a multidisciplinary team of experienced individuals that worked together to deliver the prototype. Our team was comprised an Interaction Designer, a Visual Designer, and a Front-End Web Developer (see page 6).
 
